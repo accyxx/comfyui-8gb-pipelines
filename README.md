@@ -54,9 +54,10 @@ python main.py --lowvram --fast --force-fp16 --preview-method taesd --disable-sm
 ## 📂 CURRENT WORKFLOWS IN THIS REPO
 
 ### 1. Pure Latent Audio-Driven Avatar
-*   **Path:** `/workflows/22s_pure_latent_audio_driven_avatar.json`
+*   **Path:** `/workflows/26s_pure_latent_audio_driven_avatar.json`
 *   **Features:** Z-Image Turbo GGUF-Q6 base pass, Float Advanced core audio-to-latent engine, 30 FPS VideoHelperSuite synchronization, BiRefNet local background removal.
-*   **Output:** Exactly 660 frames of high-fidelity, synchronized video at 30 FPS driven by OmniVoice TTS. 
+*   **Output:** Exactly 780 frames of high-fidelity, synchronized video at 30 FPS driven by OmniVoice TTS.
+
 
 ---
 
