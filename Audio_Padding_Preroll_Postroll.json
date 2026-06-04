@@ -1,0 +1,378 @@
+{
+  "id": "251d68ad-46ad-42c7-b34d-79d88fc1c34e",
+  "revision": 0,
+  "last_node_id": 8,
+  "last_link_id": 7,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "EmptyAudio",
+      "pos": [
+        50.60405192124609,
+        768.4439978285141
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "EmptyAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        2.5,
+        24000,
+        2
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 1,
+      "type": "Load Audio [Eclipse]",
+      "pos": [
+        46.42699656288573,
+        471.7790569090743
+      ],
+      "size": [
+        270,
+        208
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "duration",
+          "type": "FLOAT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_eclipse",
+        "ver": "3.5.25",
+        "Node name for S&R": "Load Audio [Eclipse]",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Genna_Master_Voice.wav",
+        0,
+        0,
+        "",
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353",
+      "shape": "default"
+    },
+    {
+      "id": 2,
+      "type": "EmptyAudio",
+      "pos": [
+        45.08830815518731,
+        283.1112415627712
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "EmptyAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        2.5,
+        24000,
+        2
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 8,
+      "type": "MarkdownNote",
+      "pos": [
+        -610.2547297846435,
+        291.9487661844584
+      ],
+      "size": [
+        590.5408839223016,
+        579.0038121381598
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "PROFESSIONAL AUDIO PADDING: PREROLL, POSTROLL & HANDLES",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "⏱️ PROFESSIONAL AUDIO PADDING: PREROLL, POSTROLL & HANDLES\n\nWhy do we use the 'Empty Audio' and 'Audio Concat' nodes to inject 5 seconds of silence? \nIn the professional VFX and film industry, this is a vital quality-gate workflow:\n\n1. PREROLL (The 2.5s Buffer at the Start)\n*   Nodes: 'Empty Audio' (2.5s) -> Connected to 'Audio Concat' (direction: before)\n*   VFX Purpose: Acts as a stabilization buffer for the KSampler. It gives the \n    Float Advanced engine temporal room to calibrate its latent coordinates \n    on Frame 0, completely preventing sudden mouth-warping glitches [🔍].\n\n2. POSTROLL (The 2.5s Buffer at the End)\n*   Nodes: 'Empty Audio' (2.5s) -> Connected to 'Audio Concat' (direction: after)\n*   VFX Purpose: Acts as a natural anatomical cool-down. It allows the latent \n    engine to organically close the avatar's lower jaw after the final word \n    is spoken, preventing the face from freezing abruptly.\n\n3. HANDLES (The Post-Production Benefit)\n*   Result: Compiled via 'IndexTTS2 Save Audio' into a 26-second master track.\n*   VFX Purpose: Provides essential \"editing handles\" (flesh on the bone) for \n    your NLE software (like DaVinci Resolve or CapCut) [🔍]. This ensures you can \n    apply smooth cross-fades and cuts without clipping the voice [🔍].\n\n"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 5,
+      "type": "AudioConcat",
+      "pos": [
+        365.7113961458277,
+        349.20740339920695
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio1",
+          "type": "AUDIO",
+          "link": 2
+        },
+        {
+          "name": "audio2",
+          "type": "AUDIO",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "AudioConcat",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "before"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 6,
+      "type": "AudioConcat",
+      "pos": [
+        667.9225387966515,
+        564.9620844620293
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio1",
+          "type": "AUDIO",
+          "link": 4
+        },
+        {
+          "name": "audio2",
+          "type": "AUDIO",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "AudioConcat",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "after"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 7,
+      "type": "IndexTTS2SaveAudio",
+      "pos": [
+        980.3548742308669,
+        462.1495125063656
+      ],
+      "size": [
+        270,
+        248
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 7
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "aux_id": "snicolast/ComfyUI-IndexTTS2",
+        "ver": "5b33e02bc0112b8aaf1fc823d5e5a609ca07fc27",
+        "Node name for S&R": "IndexTTS2SaveAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Genna26seconds",
+        "wav",
+        true,
+        "pcm16",
+        "320k"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    }
+  ],
+  "links": [
+    [
+      2,
+      2,
+      0,
+      5,
+      0,
+      "AUDIO"
+    ],
+    [
+      4,
+      4,
+      0,
+      6,
+      0,
+      "AUDIO"
+    ],
+    [
+      5,
+      1,
+      0,
+      5,
+      1,
+      "AUDIO"
+    ],
+    [
+      6,
+      5,
+      0,
+      6,
+      1,
+      "AUDIO"
+    ],
+    [
+      7,
+      6,
+      0,
+      7,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "workflowRendererVersion": "LG",
+    "ue_links": [],
+    "ds": {
+      "scale": 0.6968734940692886,
+      "offset": [
+        396.7838018888433,
+        -32.9188620248125
+      ]
+    },
+    "links_added_by_ue": [],
+    "frontendVersion": "1.38.13",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

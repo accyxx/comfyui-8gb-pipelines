@@ -1,0 +1,1237 @@
+{
+  "id": "d56d1337-a577-48b3-af8c-bb6cc466487a",
+  "revision": 0,
+  "last_node_id": 41,
+  "last_link_id": 49,
+  "nodes": [
+    {
+      "id": 18,
+      "type": "LoadAudio",
+      "pos": [
+        1481.046956476491,
+        3834.071852447187
+      ],
+      "size": [
+        282.798828125,
+        136
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            41
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "LoadAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "faespencer-may-i-kiss-you-my-darling-179414.mp3"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "LoadAudio",
+      "pos": [
+        1483.9441956504797,
+        4016.012985356644
+      ],
+      "size": [
+        282.798828125,
+        136
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            42
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "LoadAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "tts2_00108_.wav"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "PreviewAudio",
+      "pos": [
+        1493.5686847730879,
+        4501.476505435982
+      ],
+      "size": [
+        719.9677042397566,
+        88
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 43
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "PreviewAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 16,
+      "type": "PreviewAudio",
+      "pos": [
+        852.0254463726654,
+        4411.273170866452
+      ],
+      "size": [
+        482.0342444635153,
+        90.49264148840757
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 44
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "PreviewAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 34,
+      "type": "IndexTTS2SaveAudio",
+      "pos": [
+        847.5642669176522,
+        4547.9725349832215
+      ],
+      "size": [
+        270,
+        248
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 47
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "aux_id": "snicolast/ComfyUI-IndexTTS2",
+        "ver": "5b33e02bc0112b8aaf1fc823d5e5a609ca07fc27",
+        "Node name for S&R": "IndexTTS2SaveAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "AI_KI_NodeCraft_Kanal",
+        "wav",
+        true,
+        "f32",
+        "320k"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "PreviewAudio",
+      "pos": [
+        1605.8262629882265,
+        3629.7536185665876
+      ],
+      "size": [
+        728.7278613998612,
+        95.81489456123654
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 32
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "PreviewAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 36,
+      "type": "IndexTTS2SaveAudio",
+      "pos": [
+        1588.5965455447479,
+        3258.4567329892684
+      ],
+      "size": [
+        270,
+        248
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 49
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "aux_id": "snicolast/ComfyUI-IndexTTS2",
+        "ver": "5b33e02bc0112b8aaf1fc823d5e5a609ca07fc27",
+        "Node name for S&R": "IndexTTS2SaveAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "AI_KI_NodeCraft_Kanal",
+        "wav",
+        true,
+        "f32",
+        "320k"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "Load Audio [Eclipse]",
+      "pos": [
+        1583.2768358820958,
+        2763.173491438675
+      ],
+      "size": [
+        270,
+        208
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            45
+          ]
+        },
+        {
+          "name": "duration",
+          "type": "FLOAT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_eclipse",
+        "ver": "3.5.25",
+        "Node name for S&R": "Load Audio [Eclipse]",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "AI_KI_NodeCraft_Kanal_00013_.wav",
+        0,
+        10.1,
+        "",
+        ""
+      ],
+      "color": "#4e4e4e",
+      "bgcolor": "#3a3a3a",
+      "shape": "default"
+    },
+    {
+      "id": 11,
+      "type": "OmniVoiceWhisperLoader",
+      "pos": [
+        1594.0622436376782,
+        3056.4500406432016
+      ],
+      "size": [
+        280.4712890625,
+        106
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "whisper_model",
+          "type": "WHISPER_ASR",
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-omnivoice-tts",
+        "ver": "0.1.1",
+        "Node name for S&R": "OmniVoiceWhisperLoader",
+        "aux_id": "Saganaki22/ComfyUI-OmniVoice-TTS",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "whisper-large-v3-turbo (auto-download)",
+        "cuda",
+        "auto"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "Load Audio [Eclipse]",
+      "pos": [
+        743.1908543799142,
+        2952.547559671026
+      ],
+      "size": [
+        270,
+        208
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            46
+          ]
+        },
+        {
+          "name": "duration",
+          "type": "FLOAT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_eclipse",
+        "ver": "3.5.25",
+        "Node name for S&R": "Load Audio [Eclipse]",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "AI_KI_NodeCraft_Kanal_00013_.wav",
+        0,
+        6,
+        "",
+        ""
+      ],
+      "color": "#4e4e4e",
+      "bgcolor": "#3a3a3a",
+      "shape": "default"
+    },
+    {
+      "id": 14,
+      "type": "OmniVoiceWhisperLoader",
+      "pos": [
+        738.5571143827208,
+        2776.269383177902
+      ],
+      "size": [
+        280.4712890625,
+        106
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "whisper_model",
+          "type": "WHISPER_ASR",
+          "links": [
+            39
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-omnivoice-tts",
+        "ver": "0.1.1",
+        "Node name for S&R": "OmniVoiceWhisperLoader",
+        "aux_id": "Saganaki22/ComfyUI-OmniVoice-TTS",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "whisper-large-v3-turbo (auto-download)",
+        "cuda",
+        "fp16"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "LoadAudio",
+      "pos": [
+        1485.5949472850607,
+        4200.453022220454
+      ],
+      "size": [
+        282.798828125,
+        136
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "LoadAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "tts2_00037_.wav"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "OmniVoiceMultiSpeakerTTS",
+      "pos": [
+        1815.5431349820578,
+        3837.3312516979163
+      ],
+      "size": [
+        400,
+        660
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "speaker_1_audio",
+          "name": "num_speakers.speaker_1_audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 41
+        },
+        {
+          "label": "speaker_2_audio",
+          "name": "num_speakers.speaker_2_audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 42
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            43
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-omnivoice-tts",
+        "ver": "bbc483ee74d0222fa8bd8bb35b41fd407806bce1",
+        "Node name for S&R": "OmniVoiceMultiSpeakerTTS",
+        "aux_id": "saganaki22/ComfyUI-OmniVoice-TTS",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "OmniVoice",
+        "[Speaker_1]: Hello, I'm speaker one.\n[Speaker_2]: And I'm speaker two!",
+        32,
+        2,
+        0.25,
+        1,
+        0.3,
+        "auto",
+        "auto",
+        "auto",
+        5,
+        0,
+        5,
+        true,
+        true,
+        true,
+        343479053,
+        "randomize",
+        true,
+        "2",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 39,
+      "type": "MarkdownNote",
+      "pos": [
+        -491.2313612568862,
+        2429.699112978659
+      ],
+      "size": [
+        710.6411788020417,
+        196.9444200297844
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Find the Models for Downlaod - Follow the Download Steps",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "🎙️ REQUIRED CUSTOM NODE: OMNIVOICE TTS\n\nIf this Node shows up red, you need to install the suite manually:\n1. Open your Ubuntu terminal\n2. Navigate to your custom_nodes directory:\n   cd ~/ComfyUI/custom_nodes\n3. Clone the official repository:\n   git clone https://github.com/Saganaki22/ComfyUI-OmniVoice-TTS.git\n4. Install dependencies inside your active venv:\n   cd ComfyUI-OmniVoice-TTS && python install.py\n\n⚠️ 8GB VRAM PASCAL SAFETY TRACK:\nTo completely prevent a CUDA Out-of-Memory (OOM) error on our Tesla P4 / GTX 1080 during the 780-frame render, make sure to set:\n--> keep_model_loaded = False \n\nThis forces PyTorch to instantly purge the 2GB bfloat16 voice model from the VRAM right after the audio generation is complete, freeing up 100% of the graphics memory for the upcoming Float Advanced diffusion pass.\n\n\nI use ComfyUI-IndexTTS2 to save the wav files, you can download it via ComfyUI_Manager search for: ComfyUI-IndexTTS2 or via Github-Repo: https://github.com/snicolast/ComfyUI-IndexTTS2.git\n"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 37,
+      "type": "MarkdownNote",
+      "pos": [
+        428.4670041200366,
+        3781.9680921772165
+      ],
+      "size": [
+        373.86834875003603,
+        206.28372082017222
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Specialized Phoneme Trainer Sentence",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Are those shy phonologists trying to find every sound in each standard English sentence?\n\n\n(Generates a 5 to 6 seconds Audio-File for your Mastervoice and Voice-Cloning)\n\n"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 38,
+      "type": "MarkdownNote",
+      "pos": [
+        320.53029402751775,
+        2720.098349340969
+      ],
+      "size": [
+        356.4946444896419,
+        252.3074187788743
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Voice-Cloning the Master-Audio-File",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "\"Now, pay close attention to the Voice Cloning phase, as this is where the real magic happens. Inject your master voice sample into the reference node and populate the text box with your target script. Crucially, you must audition the reference audio file first to guarantee absolute clarity and a completely clean signal. Remember, any minor background hiss or distortion will be amplified during the cloning pass, directly breaking the fidelity of your final vocal match.\""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 41,
+      "type": "MarkdownNote",
+      "pos": [
+        1472.9035934225074,
+        4666.309116124354
+      ],
+      "size": [
+        762.474111540927,
+        124.46161121422392
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Multi-Speaker Conversations",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Here you can set up to 10 Speakers for Conversations or Meeting-Scenes "
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 40,
+      "type": "MarkdownNote",
+      "pos": [
+        1572.2000378295638,
+        2495.361953578324
+      ],
+      "size": [
+        786.7806849498602,
+        132.78943225789317
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Voice-Clone Long Form",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Here you load longer Audio clips for long Audio-Generation "
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 35,
+      "type": "IndexTTS2SaveAudio",
+      "pos": [
+        745.899806981913,
+        3220.8219893923288
+      ],
+      "size": [
+        270,
+        248
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 48
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "aux_id": "snicolast/ComfyUI-IndexTTS2",
+        "ver": "5b33e02bc0112b8aaf1fc823d5e5a609ca07fc27",
+        "Node name for S&R": "IndexTTS2SaveAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "AI_KI_NodeCraft_Kanal",
+        "wav",
+        true,
+        "f32",
+        "320k"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "PreviewAudio",
+      "pos": [
+        749.6061111987731,
+        3527.7148003551883
+      ],
+      "size": [
+        709.8403272145574,
+        99.21707687418439
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 40
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "PreviewAudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 28,
+      "type": "OmniVoiceVoiceCloneTTS",
+      "pos": [
+        1050.471725971935,
+        2763.3815533482025
+      ],
+      "size": [
+        412.8060414724964,
+        726.631665558878
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "ref_audio",
+          "type": "AUDIO",
+          "link": 46
+        },
+        {
+          "name": "whisper_model",
+          "shape": 7,
+          "type": "WHISPER_ASR",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            40,
+            48
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-omnivoice-tts",
+        "ver": "bbc483ee74d0222fa8bd8bb35b41fd407806bce1",
+        "Node name for S&R": "OmniVoiceVoiceCloneTTS",
+        "aux_id": "saganaki22/ComfyUI-OmniVoice-TTS",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "OmniVoice (auto download)",
+        "Put the prompt here!",
+        "",
+        32,
+        2,
+        0.1,
+        1,
+        0,
+        "cuda",
+        "auto",
+        "auto",
+        185922395,
+        "randomize",
+        5,
+        0,
+        5,
+        true,
+        true,
+        true,
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 26,
+      "type": "OmniVoiceLongformTTS",
+      "pos": [
+        1898.368738501298,
+        2730.081925694911
+      ],
+      "size": [
+        415.29591883116564,
+        693.6868872408199
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "ref_audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 45
+        },
+        {
+          "name": "whisper_model",
+          "shape": 7,
+          "type": "WHISPER_ASR",
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            32,
+            49
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-omnivoice-tts",
+        "ver": "bbc483ee74d0222fa8bd8bb35b41fd407806bce1",
+        "Node name for S&R": "OmniVoiceLongformTTS",
+        "aux_id": "saganaki22/ComfyUI-OmniVoice-TTS",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "OmniVoice",
+        "Put tge Prompt here ! ",
+        "",
+        32,
+        4,
+        0.1,
+        1,
+        0,
+        "auto",
+        "auto",
+        "auto",
+        42,
+        "fixed",
+        50,
+        5,
+        0,
+        5,
+        true,
+        true,
+        true,
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 30,
+      "type": "OmniVoiceVoiceDesignTTS",
+      "pos": [
+        867.0763054776078,
+        3780.7396811522894
+      ],
+      "size": [
+        444.8850017832374,
+        584.8245520255978
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            44,
+            47
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-omnivoice-tts",
+        "ver": "bbc483ee74d0222fa8bd8bb35b41fd407806bce1",
+        "Node name for S&R": "OmniVoiceVoiceDesignTTS",
+        "aux_id": "saganaki22/ComfyUI-OmniVoice-TTS",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "OmniVoice (auto download)",
+        "Put the Prompt here ! ",
+        "male, very low pitch, american accent, \n",
+        32,
+        2,
+        0.1,
+        1,
+        0,
+        "auto",
+        "auto",
+        "auto",
+        501559286,
+        "fixed",
+        5,
+        0,
+        5,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": 32,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        352.3646612871217,
+        3512.7438146177246
+      ],
+      "size": [
+        247.26666870117188,
+        154
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "type": "MarkdownNote",
+      "pos": [
+        -494.13071308829075,
+        2682.352219045908
+      ],
+      "size": [
+        723.0525918801186,
+        1927.4112781923964
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "-",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "# OmniVoice TTS\n\n  ## Auto-Download\n\n  **Models auto-download on first run** - no manual setup needed!\n\n  | Model | VRAM | Size |\n  |-------|------|------|\n  | OmniVoice (fp32) | ~8-12GB | ~4GB |\n  | OmniVoice-bf16 | ~4-6GB | ~2GB |\n\n  ---\n\n  ## Manual Download\n\n  | File | Size | Link |\n  |------|------|------|\n  | OmniVoice (Full fp32) | ~4GB | [Download](https://huggingface.co/k2-fsa/OmniVoice) |\n  | OmniVoice-bf16 | ~2GB | [Download](https://huggingface.co/drbaph/OmniVoice-bf16) |\n\n\n```\n  📂 ComfyUI/\n  ├── 📂 models/\n  │   ├── 📂 omnivoice/\n  │   │      ├── 📂 OmniVoice/\n  │   │      │      ├── config.json\n  │   │      │      └── model.safetensors\n  │   │      └── 📂 OmniVoice-bf16/\n  │   │             ├── config.json\n  │   │             └── model.safetensors\n  │   └── 📂 audio_encoders/\n  │          ├── 📂 openai_whisper-large-v3-turbo/\n  │          │      ├── config.json\n  │          │      └── model.safetensors\n  │          └── 📂 openai_whisper-medium/\n  │                 ├── config.json\n  │                 └── model.safetensors\n```\n\n  ---\n\n  ## Nodes\n\n  ### OmniVoice Longform TTS\n  Long-form TTS with smart chunking and optional voice cloning. `ref_audio` is optional — leave disconnected for automatic voice.\n\n  ### OmniVoice Voice Clone TTS\n  Clone a voice from reference audio. `ref_audio` is required. No chunking — for long text use Longform TTS.\n\n  ### OmniVoice Voice Design TTS\n  Design synthetic voices from text descriptions. No reference audio needed.\n\n  ### OmniVoice Multi-Speaker TTS\n  Generate dialogue between multiple speakers using `[Speaker_N]:` tags. Dynamic speaker inputs on ComfyUI >= 0.8.1.\n\n  ### OmniVoice Whisper Loader\n  Pre-load Whisper ASR to avoid re-downloading on each run. Connect to any TTS node's `whisper_model` input.\n\n  ---\n\n  ## Generation Parameters\n\n  | Parameter | Default | Range | Description |\n  |-----------|---------|-------|-------------|\n  | steps | 32 | 4-64 | Diffusion steps. 16=faster, 32=balanced, 64=best quality |\n  | guidance_scale | 2.0 | 0-10 | Classifier-free guidance. Higher = more text-aligned |\n  | t_shift | 0.1 | 0-1 | Time-step shift. Smaller = emphasis on earlier steps |\n  | speed | 1.0 | 0.5-2.0 | Speaking speed. >1=faster, <1=slower |\n  | duration | 0.0 | 0-60 | Fixed output duration (seconds). Overrides speed. 0=auto |\n  | position_temperature | 5.0 | 0-20 | Mask-position randomness. 0=greedy, higher=more random |\n  | class_temperature | 0.0 | 0-5 | Token sampling randomness. 0=greedy, higher=more random |\n  | layer_penalty_factor | 5.0 | 0-20 | Penalty on deeper codebook layers |\n  | denoise | True | — | Prepend denoise token for cleaner output |\n  | preprocess_prompt | True | — | Clean reference audio (remove silences, add punctuation) |\n  | postprocess_output | True | — | Remove long silences from generated audio |\n  | keep_model_loaded | True | — | Keep model in memory (offloads to CPU between runs) |\n\n  **Longform TTS only:**\n\n  | Parameter | Default | Range | Description |\n  |-----------|---------|-------|-------------|\n  | words_per_chunk | 100 | 0-500 | Words per chunk. 0=no chunking. Splits at sentence boundaries |\n\n  ---\n\n  ## Whisper ASR models (for auto-transcription)\n\n  | Model | VRAM | Link |\n  |-------|------|------|\n  | whisper-large-v3-turbo | ~1.5GB | [Download](https://huggingface.co/openai/whisper-large-v3-turbo) |\n  | whisper-large-v3 | ~3GB | [Download](https://huggingface.co/openai/whisper-large-v3) |\n  | whisper-medium | ~1.5GB | [Download](https://huggingface.co/openai/whisper-medium) |\n  | whisper-small | ~0.5GB | [Download](https://huggingface.co/openai/whisper-small) |\n  | whisper-tiny | ~0.4GB | [Download](https://huggingface.co/openai/whisper-tiny) |\n\n  ---\n\n  ## Non-verbal expression tags:\n\n  `[laughter]` `[sigh]` `[sniff]` `[question-en]` `[question-ah]` `[question-oh]` `[question-ei]` `[question-yi]` `[surprise-ah]` `[surprise-oh]` `[surprise-wa]` `[surprise-yo]` `[dissatisfaction-hnn]` `[confirmation-en]`\n\n  ---\n\n  ## Voice design attributes (comma-separated):\n\n  | Category | Options |\n  |----------|---------|\n  | Gender | `male`, `female` |\n  | Age | `child`, `young`, `middle-aged`, `elderly` |\n  | Pitch | `very low pitch`, `low pitch`, `medium pitch`, `high pitch`, `very high pitch` |\n  | Style | `whisper` |\n  | English Accents | `american accent`, `british accent`, `australian accent`, `canadian accent`, `indian accent`, `irish accent`, `scottish accent`, `south african accent` |\n  | Chinese Dialects | `四川话`, `陕西话`, `广东话`, `东北话`, `山东话`, `河南话`, `上海话`, `闽南话`, `客家话` |\n\n  **Example:** `female, young, high pitch, british accent, whisper`\n\n  ---\n\n  ## Multi-speaker dialogue format:\n\n  [Speaker_1]: Hello, I'm speaker one.\n  [Speaker_2]: And I'm speaker two!\n  [Speaker_1]: Nice to meet you!\n\n  ---\n\n  ## Links\n\n  - Original [OmniVoice](https://huggingface.co/k2-fsa/OmniVoice)\n  - Models [OmniVoice](https://huggingface.co/k2-fsa/OmniVoice) / [OmniVoice-bf16](https://huggingface.co/drbaph/OmniVoice-bf16)\n  - Paper [arXiv:2604.00688](https://arxiv.org/abs/2604.00688)\n  - Issues [Report Bug](https://github.com/saganaki22/ComfyUI-OmniVoice-TTS/issues)"
+      ],
+      "color": "#c09430",
+      "bgcolor": "rgba(24,24,27,.9)"
+    }
+  ],
+  "links": [
+    [
+      32,
+      26,
+      0,
+      2,
+      0,
+      "AUDIO"
+    ],
+    [
+      34,
+      11,
+      0,
+      26,
+      1,
+      "WHISPER_ASR"
+    ],
+    [
+      39,
+      14,
+      0,
+      28,
+      1,
+      "WHISPER_ASR"
+    ],
+    [
+      40,
+      28,
+      0,
+      15,
+      0,
+      "AUDIO"
+    ],
+    [
+      41,
+      18,
+      0,
+      29,
+      0,
+      "AUDIO"
+    ],
+    [
+      42,
+      19,
+      0,
+      29,
+      1,
+      "AUDIO"
+    ],
+    [
+      43,
+      29,
+      0,
+      21,
+      0,
+      "AUDIO"
+    ],
+    [
+      44,
+      30,
+      0,
+      16,
+      0,
+      "AUDIO"
+    ],
+    [
+      45,
+      31,
+      0,
+      26,
+      0,
+      "AUDIO"
+    ],
+    [
+      46,
+      33,
+      0,
+      28,
+      0,
+      "AUDIO"
+    ],
+    [
+      47,
+      30,
+      0,
+      34,
+      0,
+      "AUDIO"
+    ],
+    [
+      48,
+      28,
+      0,
+      35,
+      0,
+      "AUDIO"
+    ],
+    [
+      49,
+      26,
+      0,
+      36,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Voice Clone // Clone a Mastertrack / Mastervoice",
+      "bounding": [
+        711.8993846369207,
+        2679.8808240882017,
+        776.1213955370494,
+        965.7705864543318
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Longform Clone",
+      "bounding": [
+        1563.0597265501242,
+        2654.6259866580685,
+        804.43088587702,
+        1085.9476902680544
+      ],
+      "color": "#88A",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Voice Design // Create Mastertrack / Mastervoice",
+      "bounding": [
+        833.2977721911777,
+        3713.803130816895,
+        566.3376788350529,
+        1088.6256119908153
+      ],
+      "color": "#8A8",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "Multi-Speaker",
+      "bounding": [
+        1471.046956476491,
+        3760.471852447187,
+        777.5410785503595,
+        849.2245781794468
+      ],
+      "color": "#391466",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7843866205463623,
+      "offset": [
+        -209.43686112142728,
+        -2567.3896108649774
+      ]
+    },
+    "frontendVersion": "1.38.13",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "workflowRendererVersion": "LG",
+    "ue_links": [],
+    "links_added_by_ue": []
+  },
+  "version": 0.4
+}
