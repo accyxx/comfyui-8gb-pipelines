@@ -69,3 +69,8 @@ python main.py --lowvram --fast --force-fp16 --preview-method taesd --disable-sm
 
 ## 🤝 COMMUNITY AND SUCCESS GUARANTEE
 Every workflow uploaded here has been rigorously tested and executed on an actual 8GB Tesla P4 card drawing less than 75W under full load. Maximize your success, save your VRAM, and welcome to the lab!
+
+🌟 If this code helps your 8GB card survive, drop a Star to support the lab!
+
+
+
