@@ -53,10 +53,16 @@ python main.py --lowvram --fast --force-fp16 --preview-method taesd --disable-sm
 
 ## 📂 CURRENT WORKFLOWS IN THIS REPO
 
-### 1. Pure Latent Audio-Driven Avatar
+### 1. Pure Latent Audio-Driven Avatar (Full Pipeline)
 *   **Path:** `/Genna_FLOAT_ADVANCED_WORKFLOW.json`
-*   **Features:** Z-Image Turbo GGUF-Q6 base pass, Float Advanced core audio-to-latent engine, Omnivoice TTS - Audio generation,                    Audio_Padding_workflow_Preroll_Postroll, 30 FPS VideoHelperSuite synchronization, .
-*   **Output:** Exactly 780 frames of high-fidelity, synchronized video at 30 FPS driven by OmniVoice TTS.
+*   **Features:** Complete unified pipeline fusing Z-Image Turbo, OmniVoice TTS, and the Float Advanced engine.
+*   **Output:** Exactly 780 frames of synchronized video at 30 FPS (26-second sequence).
+
+### 2. Modular Sub-Pipelines (Step-by-Step)
+*   **Path:** `/z_image_turbo_workflow.json` -> Isolated base frame generator.
+*   **Path:** `/omnivoice-tts_workflow.json` -> Dedicated voice synthesis module.
+*   **Path:** `/Audio_Padding_Preroll_Postroll.json` -> Universal cross-platform 2.5s preroll & postroll padding graph (fixes frame-0 glitches).
+
 
 
 ---
