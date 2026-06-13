@@ -48,7 +48,7 @@ To force strict VRAM conservation and allow models to fit into the 8GB limit on 
 *Note: Since Pascal GPUs lack native FP16 hardware acceleration, `--force-fp16` acts as a mandatory memory-saving trade-off. It emulates lower precision to prevent CUDA OOMs at the cost of some inference speed.*
 
 ```bash
-python main.py --lowvram --fast --force-fp16 --preview-method taesd --disable-smart-memory --disable-pinned-memory
+--enable-manager-legacy-ui --lowvram --fp16-unet --fp16-vae --preview-method taesd --disable-smart-memory --disable-pinned-memory
 ```
 
 ## 📂 CURRENT WORKFLOWS IN THIS REPO
