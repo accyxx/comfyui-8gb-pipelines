@@ -36,6 +36,9 @@ If you experience micro-stuttering or abrupt movement jumps during long multi-sa
 
 ```bash
 source venv/bin/activate
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+
+or match the desired Version... 
 pip install torch torchvision torchaudio --index-url https://pytorch.org --upgrade
 ```
 
@@ -50,6 +53,7 @@ To force strict VRAM conservation and allow models to fit into the 8GB limit on 
 ```bash
 --enable-manager-legacy-ui --lowvram --fp16-unet --fp16-vae --preview-method taesd --disable-smart-memory --disable-pinned-memory
 ```
+The Flags used in all workflows of Genna-Talking Avatar 
 
 ## 📂 CURRENT WORKFLOWS IN THIS REPO
 
