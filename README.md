@@ -22,14 +22,18 @@ If you are tired of Out-of-Memory (OOM) errors, blurry textures, and broken exec
 Our lab operates completely headless regarding system-wide nvcc dependencies (`nvidia-cuda-toolkit` is NOT required). Instead, we rely entirely on the isolated execution layers inside our Python virtual environment to guarantee stable execution of modern latent diffusion networks.
 
 
-| Component / Library | Version / Layer | Details |
+### Technical Environment & Dependencies
+
+| Package | Version | Specific Purpose in Stack |
 | :--- | :--- | :--- |
-| **NVIDIA Driver** | `580.159.03` | Data Center / Server Layer |
-| **System CUDA Layer** | `13.0` | Reported by host `nvidia-smi` |
-| **Python Runtime** | `3.12.x` | Isolated Virtual Environment (`venv`) |
-| **Internal PyTorch** | `2.5.1+cu121` | Inherent Wheel optimized for Pascal VRAM management |
-| **Transformers** | `5.9.0` | Mandatory for stable Qwen3-4B GGUF text parsing |
-| **NumPy** | `2.3.5` | Strict Array Mode for post-processing masks |
+| `torch` | `2.5.1+cu121` | Tensor computations (Pascal Legacy Wheel) |
+| `torchvision` | `0.20.1+cu121` | Image processing and visual pipelines |
+| `torchaudio` | `2.5.1+cu121` | Audio processing & audio-focused nodes |
+| `transformers` | `5.9.0` | Text encoder parsing (Required for Qwen3 GGUF) |
+| `numpy` | `2.3.5` | Array operations (Strict Array Mode for VFX masks) |
+| `safetensors` | `0.7.0` | High-speed secure model weight loading |
+| `accelerate` | `1.12.0` | VRAM management (Essential for `--lowvram`) |
+| `einops` | `0.8.1` | Matrix transformations for diffusion architectures |
 
 ### Optimization Command for Pascal Architecture
 If you experience micro-stuttering or abrupt movement jumps during long multi-sampler passes (like Wan 2.1 or Float Advanced), we recommend aligning the internal wheels with the host layer using this command inside your active venv:
@@ -37,8 +41,10 @@ If you experience micro-stuttering or abrupt movement jumps during long multi-sa
 ```bash
 source venv/bin/activate
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+```
 
-or match the desired Version... 
+### or match the desired Version... 
+```bash
 pip install torch torchvision torchaudio --index-url https://pytorch.org --upgrade
 ```
 
