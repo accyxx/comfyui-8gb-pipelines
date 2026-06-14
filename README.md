@@ -75,7 +75,8 @@ The Flags used in all workflows of Genna-Talking Avatar
 
 
 
-FIX - FLOAT 
+### FIX - FLOAT ### 
+
 ## 🛠️ Automated FLOAT Pipeline Patch & Transformers 5.9.0+ Fix
 
 > [!WARNING]  
