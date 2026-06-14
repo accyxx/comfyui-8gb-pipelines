@@ -112,7 +112,7 @@ Run this script inside your main **`ComfyUI/`** directory.
 *Example: If your GitHub username is `yourusername`, the download command looks like this:*
 ```bash
 # 1. Download the FLOAT patch script from this repo (Replace with your actual GitHub path)
-wget https://githubusercontent.com
+wget https://raw.githubusercontent.com/accyxx/comfyui-8gb-pipelines/main/patch_float_node.sh
 
 # 2. Make it executable and run it
 chmod +x patch_float_node.sh
