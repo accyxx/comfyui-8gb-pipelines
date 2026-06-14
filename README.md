@@ -77,7 +77,7 @@ The Flags used in all workflows of Genna-Talking Avatar
 
 ### FIX - FLOAT ### 
 
-## 🛠️ Automated FLOAT Pipeline Patch & Transformers 5.9.0+ Fix
+## 🛠️ Automated FLOAT Pipeline Patch & Transformers 5.9.0 + Fix
 
 > [!WARNING]  
 > **DISCLAIMER:** This patch was created as a temporary hotfix specifically for my own hardware setup (Tesla P4 / Pascal Architecture) and environment. It works flawlessly on my machine, and it might work for yours too – but **there is absolutely no warranty or guarantee**. Try it at your own risk, but it's definitely worth a shot if your FLOAT pipeline is broken!
