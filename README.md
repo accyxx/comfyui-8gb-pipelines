@@ -123,6 +123,23 @@ After the script finishes successfully, restart ComfyUI, refresh your browser ($
 
 ---
 
+---
+
+### 🔄 How to Undo the Patch (Rollback)
+If you ever want to revert this patch and return to the original, unmodified custom node code, you don't need to reinstall anything. Since the custom node is a Git repository, you can discard all local changes instantly.
+
+Simply run this command inside your main **`ComfyUI/`** directory:
+```bash
+cd custom_nodes/ComfyUI-FLOAT_Optimized && git checkout src/nodes/models/wav2vec2_ser.py && cd ../..
+```
+*Alternatively, if you downloaded the script, you can just run it with the `--undo` flag:*
+```bash
+./patch_float_node.sh --undo
+```
+
+
+
+
 ### 💾 The Script File: `patch_float_node.sh`
 Create a file named `patch_float_node.sh` in your repository and paste the following clean code:
 
