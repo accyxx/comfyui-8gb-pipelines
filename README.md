@@ -141,7 +141,8 @@ cd custom_nodes/ComfyUI-FLOAT_Optimized && git checkout src/nodes/models/wav2vec
 
 
 ### 💾 The Script File: `patch_float_node.sh`
-HERE YOU CAN VIEW THE CODE GENERATED WITH AI 
+
+### HERE YOU CAN VIEW THE CODE GENERATED WITH AI 
 
 
 ```bash
