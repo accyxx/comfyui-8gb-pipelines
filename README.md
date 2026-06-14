@@ -141,10 +141,8 @@ cd custom_nodes/ComfyUI-FLOAT_Optimized && git checkout src/nodes/models/wav2vec
 
 
 ### 💾 The Script File: `patch_float_node.sh`
-Create a file named `patch_float_node.sh` in your repository and paste the following clean code:
+HERE YOU CAN VIEW THE CODE GENERATED WITH AI 
 
-```bash
-#!/bin/bash
 
 # ==============================================================================
 # 🚀 ACCYXX FLOAT PIPELINE RECOVERY PATCH
