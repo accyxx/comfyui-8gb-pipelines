@@ -144,6 +144,9 @@ cd custom_nodes/ComfyUI-FLOAT_Optimized && git checkout src/nodes/models/wav2vec
 HERE YOU CAN VIEW THE CODE GENERATED WITH AI 
 
 
+```bash
+#!/bin/bash
+
 # ==============================================================================
 # 🚀 ACCYXX FLOAT PIPELINE RECOVERY PATCH
 # Target: Fixes Transformers 5.9.0+ weights tying crash in FLOAT-Optimized
@@ -182,7 +185,6 @@ echo "--------------------------------------------------------"
 echo "🎉 Done! Please restart ComfyUI now."
 echo "--------------------------------------------------------"
 ```
-
 
 ---
 
