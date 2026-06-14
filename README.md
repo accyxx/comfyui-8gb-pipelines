@@ -75,6 +75,100 @@ The Flags used in all workflows of Genna-Talking Avatar
 
 
 
+FIX - FLOAT 
+## 🛠️ Automated FLOAT Pipeline Patch & Transformers 5.9.0+ Fix
+
+> [!WARNING]  
+> **DISCLAIMER:** This patch was created as a temporary hotfix specifically for my own hardware setup (Tesla P4 / Pascal Architecture) and environment. It works flawlessly on my machine, and it might work for yours too – but **there is absolutely no warranty or guarantee**. Try it at your own risk, but it's definitely worth a shot if your FLOAT pipeline is broken!
+
+### 💡 Understand What You Run & Ask AI!
+We highly encourage you to review the script contents below to familiarize yourself with the modifications being made to the Python files. If you want to understand exactly how the code works or verify its safety, **feel free to copy-paste the script into any AI chatbot (like ChatGPT, Gemini, or Claude) and ask for a detailed explanation!** Understanding your pipeline is a superpower.
+
+### 🚨 Crucial Step Before Patching: Backup Your Venv!
+Before running any automated patch scripts or updating dependencies, it is highly recommended to freeze and backup your working Python virtual environment (`venv`). If anything goes wrong, you can restore your setup in seconds.
+
+To create a compressed backup of your ComfyUI directory (excluding heavy model weights to save space), run this command in your Linux terminal:
+```bash
+tar --exclude='*/models/*' -czf ~/comfyui_perfect_backup.tar.gz ~/ComfyUI
+```
+*(In case of emergency, you can fully restore your state by running `rm -rf ~/ComfyUI && tar -xzf ~/comfyui_perfect_backup.tar.gz -C ~/`)*
+
+---
+
+### 📋 The FLOAT Pipeline Issue Explained
+
+After choosing **"Update All"** in ComfyUI-Manager, the latest `ComfyUI-FLOAT_Optimized` code breaks if paired with modern Transformers versions (v5.9.0+ / PyTorch 2.5.1). 
+
+**The `AttributeError` Crash:** The updated node code fails to initialize the weight-tying dictionary (`all_tied_weights_keys = {}`) required by Hugging Face's backend during `self.init_weights()`, resulting in a complete workflow crash (`AttributeError: 'Wav2Vec2ForSpeechClassification' object has no attribute 'all_tied_weights_keys'`).
+
+---
+
+### 🔧 How to Apply the FLOAT Recovery Patch
+
+This automated script resets the modified file to a clean state and injects the missing empty weight-tying dictionary (`{}`) directly into the model logic, making the FLOAT advanced engine fully operational again under newer dependencies.
+
+Run this script inside your main **`ComfyUI/`** directory.
+
+*Example: If your GitHub username is `yourusername`, the download command looks like this:*
+```bash
+# 1. Download the FLOAT patch script from this repo (Replace with your actual GitHub path)
+wget https://githubusercontent.com
+
+# 2. Make it executable and run it
+chmod +x patch_float_node.sh
+./patch_float_node.sh
+```
+
+After the script finishes successfully, restart ComfyUI, refresh your browser ($F5$), and your pipeline will be fully executable!
+
+---
+
+### 💾 The Script File: `patch_float_node.sh`
+Create a file named `patch_float_node.sh` in your repository and paste the following clean code:
+
+```bash
+#!/bin/bash
+
+# ==============================================================================
+# 🚀 ACCYXX FLOAT PIPELINE RECOVERY PATCH
+# Target: Fixes Transformers 5.9.0+ weights tying crash in FLOAT-Optimized
+# ==============================================================================
+
+COMFY_DIR="\$(pwd)"
+FLOAT_DIR="\$COMFY_DIR/custom_nodes/ComfyUI-FLOAT_Optimized"
+
+echo "--------------------------------------------------------"
+echo "🛠️ Starting FLOAT-Optimized Patch..."
+echo "--------------------------------------------------------"
+
+if [ -d "\$FLOAT_DIR" ]; then
+    echo "📦 Found FLOAT-Optimized. Applying compatibility hotfix..."
+    cd "\$FLOAT_DIR"
+    
+    # Clean state
+    git checkout src/nodes/models/wav2vec2_ser.py 2>/dev/null
+    
+    # Fix: Transformers 5.9.0+ weights tying fix ({})
+    python3 -c '
+path = "src/nodes/models/wav2vec2_ser.py"
+with open(path, "r") as f: code = f.read()
+if "self.all_tied_weights_keys = {}" not in code:
+    patched = code.replace("        self.init_weights()", "        self.all_tied_weights_keys = {}\n        self.init_weights()", 1)
+    with open(path, "w") as f: f.write(patched)
+'
+    echo "✅ FLOAT-Optimized patch successfully applied!"
+else
+    echo "❌ Error: FLOAT-Optimized directory not found!"
+    echo "Please ensure you run this script inside your main ComfyUI folder."
+fi
+
+cd "\$COMFY_DIR"
+echo "--------------------------------------------------------"
+echo "🎉 Done! Please restart ComfyUI now."
+echo "--------------------------------------------------------"
+```
+
+
 ---
 
 ## 🤝 COMMUNITY AND SUCCESS GUARANTEE
