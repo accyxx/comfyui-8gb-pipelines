@@ -13,7 +13,7 @@ If you are tired of Out-of-Memory (OOM) errors, blurry textures, and broken exec
 ### Verified Hardware Setup
 *   **GPU:** NVIDIA Tesla P4 (8GB VRAM, Pascal Architecture) / Equivalent to GTX 1080  
     *Note: Headless server card without physical display outputs. The Linux desktop environment and monitor output are fully driven by the Intel CPU's iGPU, dedicating the Tesla card purely to AI inference.*
-*   **OS:** Ubuntu 24.04.3 LTS (Noble Numbat)
+*   **OS:** Ubuntu 24.04.4 LTS (Noble Numbat)
 *   **CPU:** Intel Core i7-6700T (Providing active Intel iGPU layer)
 *   **System RAM:** 24 GB
 
