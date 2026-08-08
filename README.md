@@ -205,6 +205,7 @@ To fix this without modifying any core files, you must force-downgrade `comfy-ki
 Run this command inside your active `venv` to restore functionality:
 
 ```bash
+cd ~/ComfyUI
 source venv/bin/activate
 pip install "comfy-kitchen<=0.2.10" --force-reinstall
 ```
