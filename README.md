@@ -190,6 +190,31 @@ echo "--------------------------------------------------------"
 
 ---
 
+---
+
+## 🛠️ CRITICAL FIX - COMFY-KITCHEN CRASH (PyTorch 2.5.1 Compatibility)
+
+### 📋 The Issue Explained
+If you are running the recommended **PyTorch 2.5.1 + CUDA 12.1** stack on your Tesla P4 (or any Pascal GPU), choosing **"Update All"** in ComfyUI-Manager will auto-install `comfy-kitchen` v0.2.20+. 
+
+This breaks your startup sequence instantly with a `ValueError: infer_schema(func): Parameter kernel_size has unsupported type list[int]`. The latest kitchen update uses modern Python 3.12 type annotations (`list[int]` and the `|` operator) which are strictly rejected by the stable PyTorch 2.5.1 core.
+
+### 🔧 How to Apply the Kitchen Downgrade Fix
+To fix this without modifying any core files, you must force-downgrade `comfy-kitchen` to version `0.2.10`. This version provides full performance on Pascal architectures without the breaking modern code declarations.
+
+Run this command inside your active `venv` to restore functionality:
+
+```bash
+source venv/bin/activate
+pip install "comfy-kitchen<=0.2.10" --force-reinstall
+```
+
+⚠️ **Note for the future:** If ComfyUI throws a `ValueError` during startup after you clicked "Update All" in the Manager, simply re-run the command above to pin the kitchen package back to its stable state.
+
+
+
+
+
 ## 🤝 COMMUNITY AND SUCCESS GUARANTEE
 Every workflow uploaded here has been rigorously tested and executed on an actual 8GB Tesla P4 card drawing less than 75W under full load. Maximize your success, save your VRAM, and welcome to the lab!
 
