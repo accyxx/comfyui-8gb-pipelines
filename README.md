@@ -33,7 +33,7 @@ Our lab operates completely headless regarding system-wide nvcc dependencies (`n
 | `torchaudio` | `2.5.1+cu121` | Audio processing & audio-focused nodes |
 | `transformers` | `5.9.0` & `5.14.1`| Text encoder parsing (Required for Qwen3 GGUF) |
 | `numpy` | `2.3.5` | Array operations (Strict Array Mode for VFX masks) |
-| `safetensors` | `0.7.0` | High-speed secure model weight loading |
+| `safetensors` | `0.7.0` & `0.8.0`  | High-speed secure model weight loading |
 | `accelerate` | `1.12.0` | VRAM management (Essential for `--lowvram`) |
 | `einops` | `0.8.1` | Matrix transformations for diffusion architectures |
 
