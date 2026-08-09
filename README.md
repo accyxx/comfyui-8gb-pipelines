@@ -31,7 +31,7 @@ Our lab operates completely headless regarding system-wide nvcc dependencies (`n
 | `torch` | `2.5.1+cu121` | Tensor computations (Pascal Legacy Wheel) |
 | `torchvision` | `0.20.1+cu121` | Image processing and visual pipelines |
 | `torchaudio` | `2.5.1+cu121` | Audio processing & audio-focused nodes |
-| `transformers` | `5.9.0` | Text encoder parsing (Required for Qwen3 GGUF) |
+| `transformers` | `5.9.0` & `5.14.1`| Text encoder parsing (Required for Qwen3 GGUF) |
 | `numpy` | `2.3.5` | Array operations (Strict Array Mode for VFX masks) |
 | `safetensors` | `0.7.0` | High-speed secure model weight loading |
 | `accelerate` | `1.12.0` | VRAM management (Essential for `--lowvram`) |
