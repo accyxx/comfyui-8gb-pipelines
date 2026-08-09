@@ -4,7 +4,7 @@
 
 Welcome to the official repository of **AI/KI NodeCraft**! This space is dedicated to providing verified, rock-solid ComfyUI workflows optimized for budget 8GB VRAM consumer hardware and server cards.
 
-📺 **YouTube Channel:** [AI_KI NodeCraft](https://youtube.com)
+📺 **YouTube Channel:** [AI_KI NodeCraft](https://www.youtube.com/@aikinodecraft)
 
 ---
 
