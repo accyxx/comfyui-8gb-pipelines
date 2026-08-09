@@ -1,5 +1,7 @@
 # AI/KI NodeCraft - Stable 8GB VRAM Pipelines
 
+ 👉 **Get the latest fixes here:** **[comfyui-8gb-pipelines](https://github.com/accyxx/ComfyUI-install-for-Pascal-Architecture-)**
+
 Welcome to the official repository of **AI/KI NodeCraft**! This space is dedicated to providing verified, rock-solid ComfyUI workflows optimized for budget 8GB VRAM consumer hardware and server cards.
 
 📺 **YouTube Channel:** [AI_KI NodeCraft](https://youtube.com)
@@ -43,10 +45,18 @@ source venv/bin/activate
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
 ```
 
-### or match the desired Version... 
-```bash
-pip install torch torchvision torchaudio --index-url https://pytorch.org --upgrade
-```
+### IMPORTANT 
+> [!IMPORTANT]
+> ## 🚀 PROJECT MOVED & OPTIMIZED (New 8GB VRAM Pipelines)
+> This repository has been integrated and significantly improved! All verified workflows, automated recovery patches (including the Transformers 5.9.0+ fix), and stable runtime configurations for Pascal GPUs (Tesla P4, GTX 1080) are now hosted in our main lab repository.
+> 
+> 👉 **Get the latest fixes here:** **[comfyui-8gb-pipelines](https://github.com/accyxx/ComfyUI-install-for-Pascal-Architecture-)**
+> 
+> *Please star the new repository to support the lab and stay updated with rock-solid LTS baselines!*
+
+
+
+
 
 ---
 
